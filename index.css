@@ -1,0 +1,222 @@
+@font-face {
+  font-family: mono;
+  src: url(input_mono_regular.ttf);
+}
+@font-face {
+  font-family: mono-alt;
+  src: url(input_mono_regular.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(sans_serif.ttf);
+}
+@font-face {
+  font-family: serif;
+  src: url(serif.ttf);
+}
+html{
+    font-family: Helvetica Neue;
+    background: black;
+}
+body {
+    background: white;
+    margin: unset;
+    font-size: 3.5vw;
+}
+.main{
+    padding: 2em;
+}
+.wrapper{
+    padding: 2em;
+    color: black;
+    background: white;
+
+}
+.logo{
+    height: 10vh;
+    filter: invert(1);
+}
+h1, h2 {
+    font-family: Helvetica Neue;
+}
+h1 {
+    font-size: 10vw;
+}
+h2 {
+    font-size: 7vw;
+    font-weight: 500;
+}
+h3 {
+    font-family: mono;
+    font-size: 5vw;
+    font-weight: 400;
+    margin-top: 5vh;
+    background: rgba(0,0,0,0.05);
+    padding: .5em;
+}
+p{
+    font-size: 5vw;
+    letter-spacing: .05em;
+    line-height: 1.5;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+}
+.title{
+    font-weight: 300;
+    font-family: mono;
+    font-size: 4vw;
+}
+.titleWrapper{
+    margin-bottom: 10vh;
+}
+.subtitle{
+    margin-top: unset;
+    margin-bottom: 5vh;
+    font-weight: 300;
+}
+.listTitle{
+    font-size: 5vw;
+}
+.caption{
+    text-align: center;
+    font-weight: 400;
+    font-size: 3vw;
+    font-family: mono;
+}
+a {
+    color: unset;
+    text-decoration: underline;
+    font-weight: bold;
+}
+ol {
+    line-height: 2;
+    font-family: mono;
+    font-weight: 400;
+    font-size: 4vw;
+    list-style-type: decimal-leading-zero;
+    padding: unset;
+    list-style-position: inside;
+}
+.nodel {
+    list-style: none;
+    max-width: 20vw;
+}
+.TOC{
+
+}
+.back {
+    max-width: 30%;
+    font-family: mono;
+}
+.back:hover{
+    color: white;
+    background: black;
+}
+li:hover{
+    color: white;
+    background: black;
+}
+.minispacer{
+    height: 2.5vh;
+}
+.vspacer{
+    height: 35vh;    
+}
+.smvspacer{
+    height: 15vh;
+}
+.fullImage{
+    border-radius: 6px;
+    margin-left: 10%;
+    max-width: 80%;
+}
+.bleedImage{
+    width: 100%;
+}
+.video{
+    border-radius: 6px;
+    margin-left: 10%;
+    max-width: 80%;
+}
+footer{
+    height: 25vh;
+    padding: 10vw;
+    font-family: mono;
+    font-size: 5vw;
+    margin-top: 15vh;
+    background-color: rgba(0,0,0,0.05)
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+    font-size: 2vw;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 2vw;
+    }
+    h3{
+        font-size: 1.5vw;
+    }
+    p{
+        font-size: 1.25vw;
+    }
+    .title{
+        font-size: 1.5vw;
+        font-family: mono;
+    }
+    .titleWrapper{
+        margin-bottom: 10vh; 
+    }
+    .subtitle{
+        margin-bottom: 10vh;
+    }
+    .listTitle{
+        font-size: 2vw;
+    }
+    .wrapper{
+       padding-left:5vw;
+    }
+    .main{
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ol {
+        font-size: 1vw;
+    }
+    .back {
+        max-width: 10%;
+        font-size: 1.5vw;
+    }
+    .TOC{
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 12.5vh;
+    }
+    .vspacer{
+        height: 15vh;    
+    }
+    footer{
+        font-size: 1.5vw;
+        height: 10vh;
+        padding: 5vw;
+    }
+    .fullImage{
+        margin-left: 20%;
+        max-width: 60%;
+    }
+    .video{
+        margin-left: 20%;
+        max-width: 60%;
+    }
+    .caption{    
+        font-size: 1vw;
+    }
+}

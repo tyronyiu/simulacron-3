@@ -1,18 +1,18 @@
 @font-face {
   font-family: mono;
-  src: url(input_mono_regular.ttf);
+  src: url(/assets/input_mono_regular.ttf);
 }
 @font-face {
   font-family: mono-alt;
-  src: url(input_mono_regular.ttf);
+  src: url(/assets/input_mono_regular.ttf);
 }
 @font-face {
   font-family: sans-serif;
-  src: url(sans_serif.ttf);
+  src: url(/assets/sans_serif.ttf);
 }
 @font-face {
   font-family: serif;
-  src: url(serif.ttf);
+  src: url(/assets/serif.ttf);
 }
 html{
     font-family: Helvetica Neue;
@@ -20,6 +20,7 @@ html{
 }
 body {
     background: white;
+    color: black;
     margin: unset;
     font-size: 3.5vw;
 }
@@ -28,9 +29,6 @@ body {
 }
 .wrapper{
     padding: 2em;
-    color: black;
-    background: white;
-
 }
 .logo{
     height: 10vh;
@@ -67,9 +65,12 @@ p{
     font-weight: 300;
     font-family: mono;
     font-size: 4vw;
+    max-width: 50vw;
 }
 .titleWrapper{
     margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
 }
 .subtitle{
     margin-top: unset;
@@ -96,14 +97,17 @@ ol {
     font-weight: 400;
     font-size: 4vw;
     list-style-type: decimal-leading-zero;
-    padding: unset;
-    list-style-position: inside;
 }
+
 .nodel {
     list-style: none;
+    padding: unset;
+    list-style-position: inside;
     max-width: 20vw;
 }
 .TOC{
+    padding: unset;
+    list-style-position: inside;
 
 }
 .back {
@@ -114,9 +118,9 @@ ol {
     color: white;
     background: black;
 }
-li:hover{
+.link:hover{
+    background-color: black;
     color: white;
-    background: black;
 }
 .minispacer{
     height: 2.5vh;
@@ -168,6 +172,7 @@ footer{
     .title{
         font-size: 1.5vw;
         font-family: mono;
+        max-width: 50vw;
     }
     .titleWrapper{
         margin-bottom: 10vh; 
@@ -219,4 +224,38 @@ footer{
     .caption{    
         font-size: 1vw;
     }
+}
+
+
+
+
+
+.darkmode{
+    background-color: black;
+    color: white;
+
+}
+.dark_link:hover{
+    color: black;
+    background-color: white;
+}
+.dark-toggle{
+    align-self: start;
+}
+.invert-toggle{
+    filter: invert(1);
+
+}
+.dark-img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out
+}
+.dark-img:hover{
+    opacity: 1;
+}
+.theme-status-container{
+    text-align: center;
+}
+.theme-status-text{
+    margin: unset;
 }

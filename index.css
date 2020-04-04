@@ -14,6 +14,40 @@
   font-family: serif;
   src: url(/assets/serif.ttf);
 }
+
+.darkmode{
+    background-color: black;
+    color: white;
+
+}
+.dark_link:hover{
+    color: black !important;
+    background-color: white !important;
+}
+.dark-toggle{
+    align-self: start;
+    height: inherit
+}
+.invert-toggle{
+    filter: invert(1);
+
+}
+.dark-img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out
+}
+.dark-img:hover{
+    opacity: 1;
+}
+.theme-status-container{
+    text-align: center;
+    height: 2.5vh;
+}
+.theme-status-text{
+    margin: unset;
+}
+
+
 html{
     font-family: Helvetica Neue;
     background: black;
@@ -103,7 +137,6 @@ ol {
     list-style: none;
     padding: unset;
     list-style-position: inside;
-    max-width: 20vw;
 }
 .TOC{
     padding: unset;
@@ -194,6 +227,9 @@ footer{
     ol {
         font-size: 1vw;
     }
+    .nodel{
+    max-width: 20vw;
+    }
     .back {
         max-width: 10%;
         font-size: 1.5vw;
@@ -224,38 +260,12 @@ footer{
     .caption{    
         font-size: 1vw;
     }
+
+    .theme-status-container{
+        height: 4vh;      
+    }
 }
 
 
 
 
-
-.darkmode{
-    background-color: black;
-    color: white;
-
-}
-.dark_link:hover{
-    color: black;
-    background-color: white;
-}
-.dark-toggle{
-    align-self: start;
-}
-.invert-toggle{
-    filter: invert(1);
-
-}
-.dark-img {
-    opacity: .75;
-    transition: opacity .5s ease-in-out
-}
-.dark-img:hover{
-    opacity: 1;
-}
-.theme-status-container{
-    text-align: center;
-}
-.theme-status-text{
-    margin: unset;
-}

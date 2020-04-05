@@ -1,0 +1,8 @@
+# Primary security address
+Contact: mailto:contact@apov-labs.com
+# Secondary security address
+Contact: mailto:tysinstances@gmail.com
+# Acknowledgments to raising attention to https://tools.ietf.org/html/rfc8615.
+Acknowledgments: https://securitytxt.org
+# Our canonical security.txt access point
+Canonical: https://simulacron-3.com/.well-known/security.txt

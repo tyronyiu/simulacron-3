@@ -95,6 +95,17 @@ p{
     -moz-font-smoothing: antialiased !important;
     text-rendering: optimizelegibility !important;
 }
+.mono-text{
+    font-size: 5vw;
+    letter-spacing: .05em;
+    line-height: 1.5;
+    font-family: mono;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+
+}
 .title{
     font-weight: 300;
     font-family: mono;
@@ -201,6 +212,9 @@ footer{
     }
     p{
         font-size: 1.25vw;
+    }
+    .mono-text{
+        font-size: 1vw;
     }
     .title{
         font-size: 1.5vw;

@@ -37,8 +37,7 @@
 
 }
 .dark_link:hover{
-    color: var(--bg-color);
-    background-color: var(--font-color);
+filter:invert(1);
 }
 .dark-toggle{
     filter: invert(var(--inverted-toggle));

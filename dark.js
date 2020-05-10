@@ -1,49 +1,21 @@
-function dark() {
-   var element = document.getElementById("turn_dark");
-   element.classList.add("darkmode");
-   var toggle = document.getElementById("dark_toggle");
-   toggle.classList.add("invert-toggle");
-   var links = document.getElementsByClassName("turn_dark_link");
-    for (var i=0; i<links.length; i++){
-       links[i].classList.add("dark_link");
-    }
-
+// function to set a given theme/color-scheme
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
 }
-
-function light() {
-   var element = document.getElementById("turn_dark");
-   element.classList.remove("darkmode");
-   var toggle = document.getElementById("dark_toggle");
-   toggle.classList.remove("invert-toggle");
-   var links = document.getElementsByClassName("turn_dark_link");
-    for (var i=0; i<links.length; i++){
-       links[i].classList.remove("dark_link");
-    }
-
+// function to toggle between light and dark theme
+function toggle_theme() {
+   if (localStorage.getItem('theme') === 'theme-dark'){
+       setTheme('theme-light');
+   } else {
+       setTheme('theme-dark');
+   }
 }
-
-function toggle_theme(){
-    var theme = localStorage.getItem('theme');
-    if (theme != 'dark') {
-        dark()        
-        localStorage.setItem('theme', 'dark');
-    }
-    else{
-        localStorage.setItem('theme', 'light');
-        light()
-    }
-    var theme = localStorage.getItem('theme');
-    /*document.getElementById("theme-status").innerHTML = theme;*/
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    var theme = localStorage.getItem('theme');
-    if (theme == 'dark') {
-        dark()        
-        localStorage.setItem('theme', 'dark');
-    }
-    else{
-        localStorage.setItem('theme', 'light');
-        light()
-    }
-})
+// Immediately invoked function to set the theme on initial load
+(function () {
+   if (localStorage.getItem('theme') === 'theme-dark') {
+       setTheme('theme-dark');
+   } else {
+       setTheme('theme-light');
+   }
+})();

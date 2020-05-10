@@ -1,3 +1,19 @@
+ .theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+    --bg-color: #ffffff;
+    --inverted-toggle:0;
+  }
+  .theme-dark {
+    --color-primary: #17ed90;
+    --color-secondary: #243133;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+    --bg-color: #000000;
+    --inverted-toggle:1;
+  }
 @font-face {
   font-family: mono;
   src: url(/assets/input_mono_regular.ttf);
@@ -16,15 +32,16 @@
 }
 
 .darkmode{
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 
 }
 .dark_link:hover{
-    color: black !important;
-    background-color: white !important;
+    color: var(--bg-color);
+    background-color: var(--font-color);
 }
 .dark-toggle{
+    filter: invert(var(--inverted-toggle));
     align-self: start;
     height: inherit
 }
@@ -53,10 +70,17 @@ html{
     background: black;
 }
 body {
-    background: white;
-    color: black;
+    background: var(--bg-color);
+    color: var(--font-color);
     margin: unset;
     font-size: 3.5vw;
+}
+code{
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  display: block;
+  padding: 2vh;
+  width: fit-content;
 }
 .main{
     padding: 2em;
@@ -159,12 +183,12 @@ ol {
     font-family: mono;
 }
 .back:hover{
-    color: white;
+    color: var(--font-color);
     background: black;
 }
 .link:hover{
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
 .minispacer{
     height: 2.5vh;
@@ -194,8 +218,27 @@ footer{
     font-family: mono;
     font-size: 5vw;
     margin-top: 15vh;
-    background-color: rgba(0,0,0,0.05)
+    background-color: var(--bg-color)
 }
+
+.form-i{
+    box-shadow: 5px 5px 11px #777777, -5px -5px 11px #bebebe;
+    padding: 2vh;
+
+}
+.form-b{
+    border: unset;
+    padding: 2vh;
+    background: black;
+    color: var(--font-color);
+    font-weight: bold;
+    font-family: helvetica neue;
+
+}
+.t-center{
+    text-align: center;
+}
+
 
 @media only screen and (min-width: 992px) {
     body{
@@ -279,7 +322,3 @@ footer{
         height: 4vh;      
     }
 }
-
-
-
-

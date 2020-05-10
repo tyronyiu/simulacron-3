@@ -37,7 +37,8 @@
 
 }
 .dark_link:hover{
-filter:invert(1);
+    background-color: var(--font-color);
+    color: var(--bg-color);
 }
 .dark-toggle{
     filter: invert(var(--inverted-toggle));
@@ -182,12 +183,13 @@ ol {
     font-family: mono;
 }
 .back:hover{
-    color: var(--font-color);
-    background: black;
+    color: var(--bg-color);
+    background-color: var(--font-color);
 }
 .link:hover{
-    background-color: var(--bg-color);
-    color: var(--font-color);
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    /*filter: invert(1);*/
 }
 .minispacer{
     height: 2.5vh;

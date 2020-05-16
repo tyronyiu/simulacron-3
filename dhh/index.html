@@ -31,7 +31,6 @@ a{
     justify-content: space-evenly;
     flex-flow: row wrap;
     align-items: center;
-overflow: hidden;
 height: 80%;
 }
 .button{
@@ -63,18 +62,21 @@ height: 80%;
             display: flex;
             justify-content: center;
             padding: 2vh 2vw;
+            height: unset;
 
         }
         @media only screen and (min-width: 998px) {
             .header{
                 justify-content: left;
                 position: absolute;
+                height: 5vh;
+                max-width: unset;
             }
             .buttons-c{
                 height: 100%;
             }
             .button{
-                min-width: 30vw;
+                min-width: 15vw;
                 padding: 5vh 5vw;
                 font-size: 1.5vw;
             }
@@ -92,11 +94,13 @@ height: 80%;
                       inherit; max-width: 100%;" src="./logo.png"></a>
         </div>
         <div class="buttons-c">
+            <a href="./dimsum2020PDF-16052020-min.pdf"> <div class="button getränkekarte-c">
+                    Dim Sums</div></a>
             <a href="./Speisekarte2020.PDF-160520-min.pdf"> <div class="button speisekarte-c">
 
                     Speisekarte</div></a>
-            <a href="./dimsum2020PDF-16052020-min.pdf"> <div class="button getränkekarte-c">
-                    Dim Sums</div></a>
+            <a href="./Getränkekarte2020-min.pdf"> <div class="button getränkekarte-c">
+                    Getränkekarte</div></a>
 <!--
                     <img src="./dhhAssets/lnr-dinner.svg" style="opacity: 0.8; margin-bottom: .5em; width: 1.5em;"></img>
                     <img src="./dhhAssets/food.svg" style="opacity: 0.8; margin-bottom: .5em; width: 1.5em;"></img>

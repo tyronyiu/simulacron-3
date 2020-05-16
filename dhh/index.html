@@ -2,9 +2,11 @@
 <html>
     <head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
         <style type="text/css">
+
 <!--
 :root{
     --primary-color: #bf9b30;
+    --alt-font-color: #000000;
     --font-color: #ffffff;
     --font-color1: rgba(255,255,255,0.9);
     --font-color2: rgba(255,255,255,0.8);
@@ -15,10 +17,11 @@
     --bg-color: #000000;
     --bg-color-elevated: #1c1c1c;
 }
-body{height: 100vh; overflow: hidden;}
+
 html,body{
     margin: unset;
     background: var(--bg-color);
+    height:100%;
 }
 a{
     text-decoration:none;
@@ -28,13 +31,13 @@ a{
     justify-content: space-evenly;
     flex-flow: row wrap;
     align-items: center;
+overflow: hidden;
+height: 80%;
 }
-.speisekarte-c{
-    /*width: 60vw;
-height: 40vh;*/
+.button{
     background: var(--primary-color);
     margin: 5vh 0;
-    color: var(--font-color4);
+    color: var(--alt-font-color);
     height: fit-content;
     padding: 5vh 5vw;
     font-family: Avenir Next;
@@ -44,37 +47,25 @@ height: 40vh;*/
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    /*   
-         box-shadow:  5px 5px 5px var(--primary-color), 
-         -5px -5px 5px var(--primary-color);
-     */
+    min-width: 50vw;
+}
+.button:hover{
+    opacity: 0.8;
+}
+
+.speisekarte-c{
 }
 .getränkekarte-c{
-    /*width: 60vw;
-height: 40vh;*/
-    background: var(--primary-color);
-    margin: 5vh 2vw;
-    color: var(--font-color4);
-    height: fit-content;
-    font-weight: 500;
-    /*    box-shadow:  5px 5px 10px var(--primary-color), 
-          -5px -5px 10px var(--primary-color);*/
-    padding: 5vh 5vw;
-    font-family: Avenir Next;
-    font-size: 8vw;
-    border-radius: 6px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
 }
+
         .header{
-            height: 10vh;
+            max-width: 30vw;
             display: flex;
             justify-content: center;
             padding: 2vh 2vw;
 
         }
-        @media only screen and (min-width: 992px) {
+        @media only screen and (min-width: 998px) {
             .header{
                 justify-content: left;
                 position: absolute;
@@ -82,31 +73,29 @@ height: 40vh;*/
             .buttons-c{
                 height: 100%;
             }
-            .speisekarte-c{
+            .button{
+                min-width: 30vw;
                 padding: 5vh 5vw;
                 font-size: 1.5vw;
             }
+            .speisekarte-c{
+            }
             .getränkekarte-c{
-                padding: 5vh 5vw;
-                font-size: 1.5vw; 
             }
         }
         -->
         </style>
-
-        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js">
-        </script>
     </head>
     <body>
         <div class="header">
-            <a style="height:inherit;" href="https://www.dimsumhaus.de"><img style="height:
+            <a style="height:inherit;" href="http://www.restaurantchina.de/"><img style="height:
                       inherit; max-width: 100%;" src="./logo.png"></a>
         </div>
         <div class="buttons-c">
-            <a href="./Speisekarte2020.PDF-160520-min.pdf"> <div class="speisekarte-c">
+            <a href="./Speisekarte2020.PDF-160520-min.pdf"> <div class="button speisekarte-c">
 
                     Speisekarte</div></a>
-            <a href="./dimsum2020PDF-16052020-min.pdf"> <div class="getränkekarte-c">
+            <a href="./dimsum2020PDF-16052020-min.pdf"> <div class="button getränkekarte-c">
                     Dim Sums</div></a>
 <!--
                     <img src="./dhhAssets/lnr-dinner.svg" style="opacity: 0.8; margin-bottom: .5em; width: 1.5em;"></img>

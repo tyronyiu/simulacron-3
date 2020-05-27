@@ -3,62 +3,80 @@
 <head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
 <style type="text/css">
 <!--
-html,body{margin: unset;background: white;}
+
+:root{
+    --primary-color: #ffffff;
+    --alt-font-color: #000000;
+    --font-color: #000000;
+    --font-color1: rgba(255,255,255,0.9);
+    --font-color2: rgba(255,255,255,0.8);
+    --font-color3: rgba(255,255,255,0.7);
+    --font-color4: rgba(255,255,255,0.6);
+    --font-color5: rgba(255,255,255,0.5);
+    --font-color6: rgba(255,255,255,0.4);
+    --bg-color: #ffffff;
+    --bg-color-elevated: #1c1c1c;
+}
+
+html,body{
+    margin: unset;
+    background: var(--bg-color);
+    height:100%;
+    overflow: hidden;
+}
+
 a{text-decoration:none;}
+
 .buttons-c{
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
     align-items: center;
-    height: 88vh;
+    height: 80%;
 }
-.speisekarte-c{
-    /*width: 60vw;
-    height: 40vh;*/
-    background: white;
-    color: black;
+
+.button{
+    box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+    background: var(--primary-color);
+    margin: 5vh 0;
+    color: var(--alt-font-color);
     height: fit-content;
-    padding: 10vh 10vw;
+    padding: 5vh 7.5vw;
     font-family: Avenir Next;
     font-weight: 700;
     font-size: 8vw;
     border-radius: 6px;
-box-shadow:  10px 10px 20px #d1d1d1, 
-             -10px -10px 20px #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    min-width: 50vw;
 }
-.getränkekarte-c{
-    /*width: 60vw;
-    height: 40vh;*/
-    background: white;
-    color: black;
-    height: fit-content;
-    font-weight: 700;
-    box-shadow:  10px 10px 20px #d1d1d1, 
-             -10px -10px 20px #ffffff;
-    padding: 10vh 10vw;
-    font-family: Avenir Next;
-    font-size: 8vw;
-    border-radius: 6px;
+
+.button:hover{
+    opacity: 0.8;
 }
+
         .header{
     height: 10vh;
     text-align: center;
-    padding: 2vh 0 0 2vw;
+    padding: 2vh 0 0 0;
         }
-    @media only screen and (min-width: 992px) {
-        .header{
-            text-align: left;
-        }
-        .buttons-c{
-        }
-        .speisekarte-c{
-            padding: 5vh 5vw;
-            font-size: 1.5vw;
-        }
-        .getränkekarte-c{
-            padding: 5vh 5vw;
-            font-size: 1.5vw; 
-        }
+
+        @media only screen and (min-width: 998px) {
+            .header{
+                justify-content: left;
+                position: absolute;
+                height: 5vh;
+                max-width: unset;
+            }
+            .buttons-c{
+                height: 100%;
+            }
+            .button{
+                min-width: 15vw;
+                padding: 5vh 5vw;
+                font-size: 1.5vw;
+            }
     }
 -->
 </style>
@@ -69,8 +87,9 @@ box-shadow:  10px 10px 20px #d1d1d1,
                   "><img style="height: inherit;" src="./logo.png"></a>
     </div>
     <div class="buttons-c">
-        <a href="https://www.tyo-tyo.de/res/docs/tyotyo_speisekarte.pdf"> <div class="speisekarte-c">Speisekarte</div></a>
-        <a href="https://www.tyo-tyo.de/res/docs/tyotyo_getraenke.pdf"> <div class="getränkekarte-c">Getränkekarte</div></a>
+        <a href="https://www.tyo-tyo.de/res/docs/tyotyo_speisekarte.pdf"> <div class="button">Speisekarte</div></a>
+        <a href="https://www.tyo-tyo.de/res/docs/tyotyo_getraenke.pdf"> <div class="button">Getränkekarte</div></a>
+        <a href="./Terrassengetränkekarte.pdf"> <div class="button">Special Drinks</div></a>
     </div>
 </body>
 </html>

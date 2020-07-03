@@ -97,15 +97,15 @@ h1, h2 {
     font-family: Helvetica Neue;
 }
 h1 {
-    font-size: 3.5rem;
+    font-size: 1rem;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: 500;
 }
 h3 {
     font-family: mono;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-top: 5vh;
     background: rgba(0,0,0,0.05);
@@ -121,7 +121,7 @@ p{
     text-rendering: optimizelegibility !important;
 }
 .mono-text{
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: .05em;
     line-height: 1.5;
     font-family: mono;
@@ -134,7 +134,7 @@ p{
 .title{
     font-weight: 300;
     font-family: mono;
-    font-size: 3.5rem;
+    font-size: 1rem;
     max-width: 50vw;
 }
 .titleWrapper{
@@ -148,12 +148,12 @@ p{
     font-weight: 300;
 }
 .listTitle{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .caption{
     text-align: center;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: mono;
 }
 a {
@@ -165,7 +165,7 @@ ol {
     line-height: 2;
     font-family: mono;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     list-style-type: decimal-leading-zero;
 }
 
@@ -237,7 +237,7 @@ footer{
     height: 25vh;
     padding: 10vw;
     font-family: mono;
-    font-size: 3rem;
+    font-size: 1rem;
     margin-top: 15vh;
     background-color: var(--bg-color)
 }
@@ -261,7 +261,7 @@ footer{
 }
 
 blockquote{
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .showcase-container{
@@ -285,7 +285,7 @@ blockquote{
 }
 
 .showcase-img-title{
-    font-size: 5vw;
+    font-size: 1vw;
     margin-bottom: unset;
 }
 

@@ -153,7 +153,7 @@ p{
 .caption{
     text-align: center;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: mono;
 }
 a {
@@ -367,7 +367,7 @@ blockquote{
         max-width: 60%;
     }
     .caption{    
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 
     .theme-status-container{

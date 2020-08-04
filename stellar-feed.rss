@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
+    <!-- 👨‍🚀 -->
+    <!-- 🚀 -->
+    <!-- ✨ -->
 
 <channel>
 
-    <title>Stellar rss feed</title>
+    <title>Stellar rss feed ✨</title>
     <link>https://www.simulacron-3.com</link>
     <description>Omnia stellar explorer</description>
-    <category>Omnia</category>
+    <category>omnia</category>
     <language>en</language>
 
     <item>
-        <title>The digital space of the stellar explorer</title>
+        <title>The digital space of the stellar explorer 👨🏻‍</title>
         <link>https://www.simulacron-3.com/</link>
         <description>My personal website</description>
+        <category>website</category>
     </item>
 
     <item>
-        <title>The stellar blog - Medium</title>
+        <title>The stellar blog 🌌 - Medium channel</title>
         <link>https://www.medium.com/@stellarblog</link>
         <description>My blog is up over on medium, go check it out!</description>
+        <category>blog</category>
     </item>
 
+    <item>
+        <title>The athenaeum of you 📚 - Medium article</title>
+        <link>https://medium.com/@stellarblog/the-athenaeum-of-you-379783f7d203</link>
+        <description>An excursion into the emic object of self.</description>
+        <category>blog article</category>
+    </item>
+
+
+    <item>
+        <title>Polishing your Github profile ✨ - Medium article</title>
+        <link>https://medium.com/@stellarblog/github-profile-readme-5d80602253d7</link>
+        <description>An excursion into the emic object of self.</description>
+        <category>blog article</category>
+    </item>
 
 
 <copyright>2020 Ty Yiu. All rights reserved.</copyright>

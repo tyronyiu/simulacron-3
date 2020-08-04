@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+
+    <title>Stellar rss feed</title>
+    <link>https://www.simulacron-3.com</link>
+    <description>Omnia stellar explorer</description>
+    <category>Omnia</category>
+    <language>en</language>
+
+    <item>
+        <title>The stellar blog - Medium</title>
+        <link>https://www.medium.com/@stellarblog</link>
+        <description>My blog is up over on medium, go check it out!<description>
+    </item>
+
+    <item>
+        <title>The digital space of the stellar explorer</title>
+        <link>https://www.simulacron-3.com/</link>
+        <description>My personal website</description>
+    </item>
+
+
+<copyright>2020 Ty Yiu. All rights reserved.</copyright>
+
+</channel>
+
+</rss>

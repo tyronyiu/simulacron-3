@@ -190,6 +190,7 @@ ol {
 
 .link{
     width: fit-content;
+    font-size: .75em;
 }
 .float-right-c{
     float: right;
@@ -341,7 +342,7 @@ blockquote{
     }
     .back {
         max-width: 10%;
-        font-size: 1.5rem;
+        font-size: .75rem;
     }
     .TOC{
         max-width: 60%;
